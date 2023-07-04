@@ -1,0 +1,175 @@
+
+:root{
+    --primary : #ff0022;
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+    text-decoration: none;
+   
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    font-family: 'Poppins', 'sans-serif';
+   
+}
+.navbar {
+    position: fixed;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.7);
+display: flex;
+top: 0;
+right: 0;
+left: 0;
+padding : 1.4rem 3%;
+border-radius: 3px;
+box-shadow: 0 5px 15px  #000000;
+border-bottom: 3px solid #810011;
+justify-content: space-between;
+z-index: 99999;
+}
+.navbar .nav-logo span{
+    color: #ff0022;
+}
+.navbar .nav-logo{
+    filter: blur(0%);
+font-weight: 700;
+font-style: italic;
+font-size: 1.2rem;
+color: #fff;
+}
+
+.navbar .navbar-nav a:hover {
+    color : var(--primary);
+}
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(100%);
+    transition: 0.2s linear;
+}
+.navbar .navbar-nav a::after {
+content: '';
+display: block;
+transform: scaleX(0);
+transition: 0.2s linear;
+border-bottom: 2px solid var(--primary);
+}
+.navbar .navbar-nav a {
+   color: #fff;
+   display: inline-block;
+   font-weight: 400;
+   margin: 0 1rem;
+}
+.hiro{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    justify-content: space-between;
+    position: relative;
+    padding: 7rem 9rem;
+}
+
+.footer {
+    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-weight: 200;
+    background-color: #010101;
+    border-top: 2px solid #50000b;
+    color: white;
+    text-align: center;
+  }
+   
+  .hiro .bgg h1{
+    font-family: 'Dosis' , sans-serif;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 4px;
+    margin-top: 2rem;
+
+  }
+  .hiro .bgg .contenn{
+    display: flex;
+    justify-content: space-between;
+  margin-top: 2rem;
+
+
+  }
+  .hiro .bgg{
+   background-color: #000000c7;
+   height: 80vh;
+   width: 160vh;
+   border-radius: 7px;
+   box-shadow: 0 0 20px 8px #50000b98;
+   padding: 0.5rem 7%;
+   display: block;
+
+  }
+  .hiro .bgg .warna h1{
+    color: var(--primary);
+    margin-top: 0.1rem;
+    border-bottom: 2px solid var(--primary);
+  }
+  .hiro .bgg .warna .colorpick{
+width: 10rem;
+height: 5rem;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+
+  }
+  .hiro .bgg .warna p{
+    text-align: center;
+    font-size: 0.7rem;
+    margin-top: 2rem;
+  }
+  /* ------------- warnaaa------------------ */
+  .hiro .bgg .warna:hover{
+    box-shadow: 0 0 10px  #fff;
+    transition: 0.2s linear ;
+  }
+  .hiro .bgg .warna1:hover{
+    box-shadow: 0 0 10px  #fff;
+    transition: 0.2s linear ;
+  }
+  .hiro .bgg .warna2:hover{
+    box-shadow: 0 0 10px  #fff;
+    transition: 0.2s linear ;
+  }
+  /* ------------------------------------------- */
+  .hiro .bgg .warna{
+    background-color: #c9c9c9;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 5px;
+    transition: 0.2s linear;
+    align-items: center;
+  }
+  .hiro .bgg .warna1{
+    background-color: #c9c9c9;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 5px;
+    transition: 0.2s linear;
+  }
+  .hiro .bgg .warna2{
+    background-color: #c9c9c9;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 5px;
+    transition: 0.2s linear;
+  }
+
+  /* --------------------------------------------- */
+  .hiro .bgg .contoh{
+    background-color: rgb(0, 0, 0);
+    width: 3rem;
+    height: 3rem;
+    margin: 3rem 3rem;
+  }
