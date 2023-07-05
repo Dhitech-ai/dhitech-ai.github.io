@@ -80,7 +80,7 @@ border-bottom: 2px solid var(--primary);
     min-height: 100vh;
     justify-content: space-between;
     position: relative;
-    padding: 7rem 5%;
+    padding: 7rem 10%;
 }
 
 .footer {
@@ -236,7 +236,9 @@ display: block;
   margin: 2rem 1rem;
   font-size: 1.2rem;
 }
-
+.hiro {
+    padding: 10rem 7%;
+}
 .hiro .bgg {
   width:40vh;
   height: 200%;
