@@ -42,6 +42,15 @@ font-size: 1.2rem;
 color: #fff;
 }
 
+.navbar  .menuu a{
+  color: #fff;
+  transition: 0.2s linear;
+  display: none;
+}
+.navbar  .menuu a:hover{
+  color:var(--primary);
+  transition: 0.2s linear;
+}
 .navbar .navbar-nav a:hover {
     color : var(--primary);
 }
@@ -70,7 +79,7 @@ border-bottom: 2px solid var(--primary);
     min-height: 100vh;
     justify-content: space-between;
     position: relative;
-    padding: 7rem 9rem;
+    padding: 7rem 10%;
 }
 
 .footer {
@@ -94,7 +103,7 @@ border-bottom: 2px solid var(--primary);
 
   }
   .hiro .bgg .contenn{
-    display: flex;
+    display:flex;
     justify-content: space-between;
   margin-top: 2rem;
 
@@ -108,6 +117,7 @@ border-bottom: 2px solid var(--primary);
    box-shadow: 0 0 20px 8px #50000b98;
    padding: 0.5rem 7%;
    display: block;
+   
 
   }
   .hiro .bgg .warna h1{
@@ -172,4 +182,90 @@ display: block;
     width: 3rem;
     height: 3rem;
     margin: 3rem 3rem;
+  }
+
+  /* media querissssss */
+
+
+  @media(max-width : 1366px){
+    html{
+      font-size: 80%;
+    }
+  }
+
+
+
+
+
+  @media(max-width : 768px){
+    html{
+      font-size: 63%;
+    }
+
+    #menu{
+      display: inline-block;
+    }
+
+
+.navbar .navbar-nav{
+  position: absolute;
+  top: 100%;
+  right: -120%;
+  background-color: #fff;
+  width: 30rem;
+  padding: 0 3%;
+  height: 100vh;
+  transition: 0.3s linear;
+}
+.navbar .navbar-nav.active{
+  right: 0;
+  transition: 0.3s linear;
+}
+ 
+
+.navbar .navbar-nav a:hover::after{
+  transform: scaleX(0.2);
+}
+.navbar .navbar-nav a::after{
+  transform-origin: 0 0;
+}
+.navbar .navbar-nav a{
+  display: block;
+  color: #000000;
+  margin: 2rem 1rem;
+  font-size: 1.2rem;
+}
+
+.hiro .bgg {
+  width: 60vh;
+  height: 200%;
+}
+.hiro .bgg .contenn{
+  display: block;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.hiro .bgg .warna{
+  margin: 2rem 0;
+  width: 30rem;
+  height: 30rem;
+}
+
+.hiro .bgg .warna .colorpick{
+  width: 20rem;
+  height: 20rem;
+}
+
+.hiro .bgg .warna h1{
+  font-size: 3rem;
+}
+.hiro .bgg .warna p{
+  font-size: 1.2rem;
+}
+
+  }
+  @media(max-width : 450px){
+    html{
+      font-size: 55%;
+    }
   }
