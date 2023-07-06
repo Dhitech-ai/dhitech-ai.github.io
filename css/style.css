@@ -332,9 +332,11 @@ display: block;
   margin: 2rem 1rem;
   font-size: 1.2rem;
 }
-
+.hiro{
+    padding: 10rem 7%;
+}
 .hiro .bgg {
-  width: 30vh;
+  width: 42vh;
   height: 200%;
 }
 .hiro .bgg .contenn{
