@@ -1,4 +1,4 @@
-console.log("ok")
+
 var valuee = 230;
 
 // fetch(endpoint)
@@ -18,7 +18,11 @@ const green = "https://blynk.cloud/external/api/update?token=G5NHNvM9jFzq9Joci7y
 var r = 0
 var g = 0
 var b = 0
-
+async function matii(){
+     await fetch("https://blynk.cloud/external/api/update?token=G5NHNvM9jFzq9Joci7ypO0dLXwpZkNMm&pin=V1&value=0")
+        await fetch("https://blynk.cloud/external/api/update?token=G5NHNvM9jFzq9Joci7ypO0dLXwpZkNMm&pin=V2&value=0")
+        await fetch("https://blynk.cloud/external/api/update?token=G5NHNvM9jFzq9Joci7ypO0dLXwpZkNMm&pin=V3&value=0")
+}
 function printColor(ev) {
     const color = ev.target.value
      r = parseInt(color.substr(1, 2), 16)
@@ -31,7 +35,22 @@ function printColor(ev) {
    
    
 const navbarnav = document.querySelector('.navbar-nav');
+const gamode = document.querySelector('.colorpick');
+const x =  document.querySelector('.warna p');
+
 
 document.querySelector('#menu').onclick = () => {
     navbarnav.classList.toggle('active');
+};
+document.querySelector('.switch input').onclick = () => {
+    gamode.classList.toggle('active');
+  
+
+    if (x.innerHTML === "turn on game mode to choose a color") {
+        x.innerHTML = "select to change the light color";
+      } else {
+        matii()
+        x.innerHTML = "turn on game mode to choose a color";
+      }
+
 };

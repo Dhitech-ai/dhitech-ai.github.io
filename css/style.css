@@ -1,5 +1,4 @@
 
-
 :root{
     --primary : #ff0022;
 }
@@ -122,24 +121,121 @@ border-bottom: 2px solid var(--primary);
 
   }
   .hiro .bgg .warna h1{
-    color: var(--primary);
+    color:#fff;
     margin-top: 0.1rem;
     border-bottom: 2px solid var(--primary);
   }
+  /* .hiro .bgg .warna .colorpick{
+  display: none;
+  } */
   .hiro .bgg .warna .colorpick{
+    display: none;
+  }
+  .hiro .bgg .warna .colorpick.active{
 width: 10rem;
 height: 5rem;
 display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2rem;
-
+  margin-top: 2rem
+  }
+  
+  .hiro .bgg .warna .tombol{
+    
   }
   .hiro .bgg .warna p{
+    font-family: 'Agdasima' , sans-serif;
     text-align: center;
-    font-size: 0.7rem;
-    margin-top: 2rem;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    color: #fff;
+    margin: 0.7rem 1rem;
   }
+  /* ------------------------------------------------------------------- */
+  /* -------------------------------------------------------------------- */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 54px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('bgn.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s linear;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 0 2px 1px #000;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 43px;
+    width: 43px;
+    left: 5px;
+    bottom: 4px;
+    background-image: url('tidur.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-image: url('bgm.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 20px 1px #ffffff;
+  }
+  input:checked + .slider::before {
+    background-image: url('game.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s linear;
+  }
+  
+ 
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(46px);
+    -ms-transform: translateX(46px);
+    transform: translateX(46px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  /* -------------------------------------------------------------------- */
+  /* -------------------------------------------------------------------- */
   /* ------------- warnaaa------------------ */
   .hiro .bgg .warna:hover{
     box-shadow: 0 0 10px  #fff;
@@ -155,7 +251,7 @@ display: block;
   }
   /* ------------------------------------------- */
   .hiro .bgg .warna{
-    background-color: #c9c9c9;
+    background-color: #383838;
     width: 14rem;
     height: 14rem;
     border-radius: 5px;
@@ -236,11 +332,9 @@ display: block;
   margin: 2rem 1rem;
   font-size: 1.2rem;
 }
-.hiro {
-    padding: 10rem 7%;
-}
+
 .hiro .bgg {
-  width:40vh;
+  width: 60vh;
   height: 200%;
 }
 .hiro .bgg .contenn{
