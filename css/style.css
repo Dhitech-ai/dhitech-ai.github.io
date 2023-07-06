@@ -351,15 +351,15 @@ display: block;
 }
 
 .hiro .bgg .warna .colorpick{
-  width: 20rem;
-  height: 20rem;
+  width: 40rem;
+  height: 40rem;
 }
 
 .hiro .bgg .warna h1{
   font-size: 3rem;
 }
 .hiro .bgg .warna p{
-  font-size: 1.2rem;
+  font-size: 3rem;
 }
 
   }
