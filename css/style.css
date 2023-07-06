@@ -350,9 +350,9 @@ display: block;
   height: 30rem;
 }
 
-.hiro .bgg .warna .colorpick{
-  width: 40rem;
-  height: 40rem;
+.hiro .bgg .warna .colorpick.active{
+  width: 20rem;
+  height: 20rem;
 }
 
 .hiro .bgg .warna h1{
